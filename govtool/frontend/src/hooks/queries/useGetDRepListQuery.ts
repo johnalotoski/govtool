@@ -69,5 +69,6 @@ export const useGetDRepListInfiniteQuery = (
     isDRepListLoading: isLoading,
     dRepData: data?.pages.flatMap((page) => page.elements),
     isPreviousData,
+    dRepListTotalCount: data?.pages[0].total,
   };
 };

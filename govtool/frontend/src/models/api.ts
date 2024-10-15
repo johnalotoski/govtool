@@ -113,6 +113,7 @@ export type DrepDataDTO = {
   drepId: string;
   latestRegistrationDate: string;
   latestTxHash?: string;
+  metadataError: string | null;
   metadataHash?: string;
   status: DRepStatus;
   type: "DRep" | "SoleVoter";

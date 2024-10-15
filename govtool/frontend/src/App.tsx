@@ -39,6 +39,7 @@ import {
 import { PublicRoute } from "./pages/PublicRoute";
 import { TopBanners } from "./components/organisms/TopBanners";
 import { DashboardHome } from "./pages/DashboardHome";
+import { DRepStats } from "./pages/DRepStats";
 
 export default () => {
   const { isProposalDiscussionForumEnabled } = useFeatureFlag();
@@ -147,6 +148,7 @@ export default () => {
           />
           <Route path={PATHS.dRepDirectoryDRep} element={<DRepDetails />} />
         </Route>
+        <Route path={PATHS.dRepStats} element={<DRepStats />} />
         <Route
           path={PATHS.createGovernanceAction}
           element={<CreateGovernanceAction />}
